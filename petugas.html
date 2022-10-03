@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard Admin" />
+    <meta name="author" content="Muhammad Rayyan Imani">
+    <link rel="icon" href="./assets/img/logo_polmed.png" type="image/icon type">
+
+    <title>Dashboard Admin</title>
+
+    <!-- my-css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- end bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- wrapper -->
+    <div class="d-flex" id="wrapper">
+        <!-- sidebar start here -->
+        <div class="sidebar" id="sidebar-wrapper">
+
+            <!-- logo brand start here -->
+            <div class="sidebar-heading text-center py-4 fw-bold border-bottom">
+                <!-- img logo  -->
+                <img src="./assets/img/logo_polmed.png" alt="logo polmed" width="76" height="74">
+                <!-- end img -->
+                Politeknik Negeri Medan
+            </div>
+            <!-- logo brand here -->
+
+            <!-- navigasi sidebar start here -->
+            <div class="list-group list-group-flush my-3">
+
+                <!-- link 1 -->
+                <a href="index.html" class="list-group-item list-group-item-group-action bg-transparent active">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.428 21.94C10.8334 23.233 10.8334 24.7039 10.8334 27.6457V36.8332C10.8334 40.9187 10.8334 42.9615 12.1026 44.2307C13.3718 45.4999 15.4145 45.4999 19.5 45.4999H19.5834V34.6667C19.5834 32.9178 21.0011 31.5 22.75 31.5H29.25C30.9989 31.5 32.4167 32.9178 32.4167 34.6667V45.4999H32.5C36.5855 45.4999 38.6283 45.4999 39.8975 44.2307C41.1667 42.9615 41.1667 40.9187 41.1667 36.8332V27.6457C41.1667 24.7039 41.1667 23.233 40.572 21.94C39.9774 20.6471 38.8606 19.6899 36.627 17.7754L34.4603 15.9182C30.4231 12.4578 28.4045 10.7275 26 10.7275C23.5955 10.7275 21.5769 12.4578 17.5398 15.9182L15.3731 17.7754C13.1395 19.6899 12.0227 20.6471 11.428 21.94ZM30.4167 45.4999V34.6667C30.4167 34.0223 29.8944 33.5 29.25 33.5H22.75C22.1057 33.5 21.5834 34.0223 21.5834 34.6667V45.4999H30.4167Z"
+                            fill="white" />
+                    </svg>
+                    Home
+                </a>
+
+
+                <!-- link 2 -->
+                <a href="./petugas.html" class="list-group-item list-group-item-group-action bg-transparent">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.33337 26C4.33337 14.0338 14.0339 4.33333 26 4.33333C37.9662 4.33333 47.6667 14.0338 47.6667 26C47.6667 32.9758 44.37 39.1817 39.2496 43.1446C38.3601 40.5382 36.7186 38.2447 34.5227 36.5597C32.0777 34.6836 29.0819 33.6667 26 33.6667C22.9182 33.6667 19.9224 34.6836 17.4774 36.5597C15.2814 38.2447 13.64 40.5382 12.7505 43.1446C7.63006 39.1817 4.33337 32.9758 4.33337 26ZM33.3052 38.1464C35.342 39.7093 36.8223 41.883 37.5316 44.3464C34.1921 46.4498 30.2382 47.6667 26 47.6667C21.7619 47.6667 17.8079 46.4498 14.4685 44.3464C15.1778 41.883 16.6581 39.7093 18.6949 38.1464C20.7906 36.5383 23.3584 35.6667 26 35.6667C28.6417 35.6667 31.2095 36.5383 33.3052 38.1464ZM20.5 19.5C20.5 16.4624 22.9625 14 26 14C29.0376 14 31.5 16.4624 31.5 19.5C31.5 22.5376 29.0376 25 26 25C22.9625 25 20.5 22.5376 20.5 19.5ZM26 12C21.8579 12 18.5 15.3579 18.5 19.5C18.5 23.6421 21.8579 27 26 27C30.1422 27 33.5 23.6421 33.5 19.5C33.5 15.3579 30.1422 12 26 12Z"
+                            fill="white" />
+                        <rect x="4.83337" y="4.83333" width="42.3333" height="42.3333" rx="21.1667" stroke="white" />
+                    </svg>
+                    Tabel Pegawai
+                </a>
+
+                <!-- link 3 -->
+                <a href="./cuti.html" class="list-group-item list-group-item-group-action bg-transparent">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.33337 14.8333C4.33337 12.9477 4.33337 12.0049 4.91916 11.4191C5.50495 10.8333 6.44776 10.8333 8.33337 10.8333H43.6667C45.5523 10.8333 46.4951 10.8333 47.0809 11.4191C47.6667 12.0049 47.6667 12.9477 47.6667 14.8333V20.6667C47.6667 21.1381 47.6667 21.3738 47.5203 21.5202C47.3738 21.6667 47.1381 21.6667 46.6667 21.6667H5.33337C4.86197 21.6667 4.62627 21.6667 4.47982 21.5202C4.33337 21.3738 4.33337 21.1381 4.33337 20.6667V14.8333Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M4.33337 43.6667C4.33337 45.5523 4.33337 46.4951 4.91916 47.0809C5.50495 47.6667 6.44776 47.6667 8.33337 47.6667H43.6667C45.5523 47.6667 46.4951 47.6667 47.0809 47.0809C47.6667 46.4951 47.6667 45.5523 47.6667 43.6667V27C47.6667 26.5286 47.6667 26.2929 47.5203 26.1464C47.3738 26 47.1381 26 46.6667 26H5.33337C4.86197 26 4.62627 26 4.47982 26.1464C4.33337 26.2929 4.33337 26.5286 4.33337 27V43.6667ZM15.1667 31.3333C15.1667 30.8619 15.1667 30.6262 15.3132 30.4798C15.4596 30.3333 15.6953 30.3333 16.1667 30.3333H22.8334C23.3048 30.3333 23.5405 30.3333 23.6869 30.4798C23.8334 30.6262 23.8334 30.8619 23.8334 31.3333V33.6667C23.8334 34.1381 23.8334 34.3738 23.6869 34.5202C23.5405 34.6667 23.3048 34.6667 22.8334 34.6667H16.1667C15.6953 34.6667 15.4596 34.6667 15.3132 34.5202C15.1667 34.3738 15.1667 34.1381 15.1667 33.6667V31.3333ZM15.3132 39.1464C15.1667 39.2929 15.1667 39.5286 15.1667 40V42.3333C15.1667 42.8047 15.1667 43.0404 15.3132 43.1869C15.4596 43.3333 15.6953 43.3333 16.1667 43.3333H22.8334C23.3048 43.3333 23.5405 43.3333 23.6869 43.1869C23.8334 43.0404 23.8334 42.8047 23.8334 42.3333V40C23.8334 39.5286 23.8334 39.2929 23.6869 39.1464C23.5405 39 23.3048 39 22.8334 39H16.1667C15.6953 39 15.4596 39 15.3132 39.1464ZM28.1667 31.3333C28.1667 30.8619 28.1667 30.6262 28.3132 30.4798C28.4596 30.3333 28.6953 30.3333 29.1667 30.3333H35.8334C36.3048 30.3333 36.5405 30.3333 36.6869 30.4798C36.8334 30.6262 36.8334 30.8619 36.8334 31.3333V33.6667C36.8334 34.1381 36.8334 34.3738 36.6869 34.5202C36.5405 34.6667 36.3048 34.6667 35.8334 34.6667H29.1667C28.6953 34.6667 28.4596 34.6667 28.3132 34.5202C28.1667 34.3738 28.1667 34.1381 28.1667 33.6667V31.3333ZM28.3132 39.1464C28.1667 39.2929 28.1667 39.5286 28.1667 40V42.3333C28.1667 42.8047 28.1667 43.0404 28.3132 43.1869C28.4596 43.3333 28.6953 43.3333 29.1667 43.3333H35.8334C36.3048 43.3333 36.5405 43.3333 36.6869 43.1869C36.8334 43.0404 36.8334 42.8047 36.8334 42.3333V40C36.8334 39.5286 36.8334 39.2929 36.6869 39.1464C36.5405 39 36.3048 39 35.8334 39H29.1667C28.6953 39 28.4596 39 28.3132 39.1464Z"
+                            fill="white" />
+                        <path d="M15.1666 6.5L15.1666 13" stroke="white" stroke-width="2" stroke-linecap="round" />
+                        <path d="M36.8334 6.5L36.8334 13" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Tabel Cuti
+                </a>
+
+                <!-- link 4 -->
+                <a href="./log-out.html" class="list-group-item list-group-item-group-action bg-transparent">
+                    <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.2124 6.40144L34.2353 3.25499C37.4559 2.7489 39.0662 2.49585 40.1164 3.39397C41.1667 4.29209 41.1667 5.92215 41.1667 9.18225V24.9991H25.914L33.2809 15.7905L31.7192 14.5411L23.0525 25.3744L22.5527 25.9991L23.0525 26.6238L31.7192 37.4571L33.2809 36.2077L25.914 26.9991H41.1667V42.8159C41.1667 46.0761 41.1667 47.7061 40.1164 48.6042C39.0662 49.5024 37.4559 49.2493 34.2353 48.7432L14.2124 45.5968C12.5997 45.3433 11.7933 45.2166 11.3133 44.6553C10.8334 44.094 10.8334 43.2778 10.8334 41.6453V10.353C10.8334 8.72043 10.8334 7.90417 11.3133 7.34288C11.7933 6.78159 12.5997 6.65487 14.2124 6.40144Z"
+                            fill="white" />
+                    </svg>
+                    Log Out
+                </a>
+            </div>
+            <!-- navigasi sidebar end here -->
+
+        </div>
+        <!-- sidebar end here -->
+
+        <!-- page content start here -->
+        <div id="page-content-wrapper">
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center nav-hamburger">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0 px-3 fw-semibold">Dashboard</h2>
+                </div>
+
+            </nav>
+            <!-- end navabr -->
+
+            <!-- konten -->
+            <div class="container-fluid px-4">
+                <!-- row 1 -->
+                <div class="row g-3 my-4">
+                    <div class="col py-5">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h3 class="card-title fw-semibold">Table Pegawai</h3>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn mt-2 py-3 btn-warna" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Tambah Data
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title fw-semibold" id="exampleModalLabel">Tambah Data
+                                                </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="" method="post">
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputnama-pegawai1"
+                                                            class="form-label fw-semibold">Nama
+                                                            Pegawai</label>
+                                                        <input type="text" class="form-control"
+                                                            id="exampleInputnama-pegawai1"
+                                                            aria-describedby="nama-pegawaiHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputposisi1"
+                                                            class="form-label fw-semibold">Posisi</label>
+                                                        <input type="text" class="form-control" id="exampleInputposisi1"
+                                                            aria-describedby="posisiHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputumur1"
+                                                            class="form-label fw-semibold">Umur</label>
+                                                        <input type="number" class="form-control" id="exampleInputumur1"
+                                                            aria-describedby="umurHelp">
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputGaji1"
+                                                            class="form-label fw-semibold">Gaji</label>
+                                                        <input type="number" class="form-control" id="exampleInputGaji1"
+                                                            aria-describedby="GajiHelp">
+                                                    </div>
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success">Tambah Data</button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end modal -->
+
+                                <!-- table -->
+                                <table id="dataTables" class="table table-striped mt-3" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Age</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger Nixon</td>
+                                            <td>Dosen</td>
+                                            <td>24</td>
+                                            <td>$320,800</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett Winters</td>
+                                            <td>Ketua Koperasi</td>
+                                            <td>30</td>
+                                            <td>$170,750</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton Cox</td>
+                                            <td>Cleaning Services</td>
+                                            <td>25</td>
+                                            <td>$86,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- end tables -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- akhir row 1 -->
+            </div>
+            <!-- akhir dari konten -->
+
+        </div>
+        <!-- page content end here -->
+
+
+
+    </div>
+    <!-- end wrapper -->
+
+
+    <!-- my js -->
+    <script>
+        var el = document.getElementById("wrapper");
+        var toggleButton = document.getElementById("menu-toggle");
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+
+        $(document).ready(function () {
+            $('#dataTables').DataTable();
+        });
+    </script>
+
+    <!-- end my js -->
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js">
+    </script>
+</body>
+
+</html>
